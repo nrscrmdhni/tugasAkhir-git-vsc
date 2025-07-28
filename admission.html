@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pendaftaran - Profil Kampus</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <img src="img/logo.png" alt="Logo Kampus" class="logo" />
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="about.html">Tentang</a></li>
+        <li><a href="programs.html">Program Studi</a></li>
+        <li><a href="news-events.html">Berita & Acara</a></li>
+        <li><a href="gallery.html">Galeri</a></li>
+        <li><a href="contact.html">Kontak</a></li>
+        <li><a href="admission.html" class="active">Pendaftaran</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="content">
+    <h1>Pendaftaran Mahasiswa Baru</h1>
+
+    <section class="info-pendaftaran">
+      <p>Pendaftaran mahasiswa baru kini dibuka untuk Tahun Akademik 2025/2026!</p>
+      <ul>
+        <li><strong>Periode Pendaftaran:</strong> 1 Juli – 10 Agustus 2025</li>
+        <li><strong>Syarat:</strong> Ijazah SMA/SMK sederajat, KTP, dan pas foto</li>
+        <li><strong>Biaya Pendaftaran:</strong> Rp 150.000</li>
+      </ul>
+    </section>
+
+    <section class="form-pendaftaran">
+      <h2>Formulir Pendaftaran</h2>
+      <form id="formDaftar" onsubmit="return validateForm()">
+        <label for="nama">Nama Lengkap:</label>
+        <input type="text" id="nama" name="nama" required />
+
+        <label for="email">Email Aktif:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="prodi">Pilih Program Studi:</label>
+        <select id="prodi" name="prodi" required>
+          <option value="">-- Pilih --</option>
+          <option value="informatika">Teknik Informatika</option>
+          <option value="sipil">Teknik Sipil</option>
+          <option value="manajemen">Manajemen</option>
+          <option value="komunikasi">Ilmu Komunikasi</option>
+        </select>
+
+        <button type="submit">Daftar Sekarang</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Kampus Digital. Semua Hak Dilindungi.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kontak - Profil Kampus</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <img src="img/logo.png" alt="Logo Kampus" class="logo" />
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="about.html">Tentang</a></li>
+        <li><a href="programs.html">Program Studi</a></li>
+        <li><a href="news-events.html">Berita & Acara</a></li>
+        <li><a href="gallery.html">Galeri</a></li>
+        <li><a href="contact.html" class="active">Kontak</a></li>
+        <li><a href="admission.html">Pendaftaran</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="content">
+    <h1>Hubungi Kami</h1>
+
+    <section class="contact-info">
+      <p><strong>Alamat:</strong> Jl. ADHYAKSA BARU LR 1</p>
+      <p><strong>Email:</strong> info@kampusdigital.ac.id</p>
+      <p><strong>Telepon:</strong> (021) 12345678</p>
+      <p><strong>Jam Operasional:</strong> Senin - Jumat, 08.00 - 16.00 WITA</p>
+    </section>
+
+    <section class="contact-form">
+      <h2>Kirim Pesan</h2>
+      <form id="formKontak" onsubmit="return validateForm()">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="pesan">Pesan:</label>
+        <textarea id="pesan" name="pesan" rows="5" required></textarea>
+
+        <button type="submit">Kirim</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Kampus Digital. Semua Hak Dilindungi.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
